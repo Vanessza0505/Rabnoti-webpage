@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rabnóti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Times New Roman', Times, serif;
+    }
+    .nav-item:hover .dropdown-menu { display: block; 
+    }
+    .dropdown-menu { display: none; z-index: 100; 
+    }
+    #search-bar { display: none; }
+    #search-bar.open { display: flex; }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-black">
+<header>
+
+<!-----1.rész------------------------------------------------------------------------------------------------------>
+
+  <div class="bg-black text-white">
+    <div class="max-w-screen-xl mx-auto px-6 py-2 flex items-center justify-center gap-3">
+      <h1 class="text-[40px] font-semibold">Baranya Vármegyei Rabnóti</h1>
+    </div>
+  </div>
+
+<!-----2.rész------------------------------------------------------------------------------------------------------>
+
+<div class="border-b border-gray-900 bg-gray-950">
+    <div class="mx-auto px-6 py-[10px] flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <h2 class="font-semibold text-blue-400 text-[25px] whitespace-nowrap">Szabadulj ki az iskolából!</h2>
+        <h2 class="text-white text-[25px]">Sok sikert és jó játékot kívánunk!</h2>
+      </div>
+      <a href="https://www.youtube.com/@PecsRabnoti" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="YouTube csatorna"
+         class="text-gray-400 hover:text-[#FF0000] transition-colors text-[20px] flex-shrink-0">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+</div>
+
+<!-----3.rész------------------------------------------------------------------------------------------------------>
+
+<div class="bg-gray-975 pt-7 pb-5">
+  <div class="max-w-screen-xl mx-auto px-6 flex justify-center">
+    <div class="flex items-center gap-6">
+      <div class="w-[150px] h-[150px] border border-gray-200 shadow-sm overflow-hidden flex-shrink-0 flex items-center justify-center bg-gray-900">
+        <img src="LOGO.jpg" alt="Éjszaka a Rabnótiban logo" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <h1 class="text-[35px] font-bold text-white leading-[1.4]">Éjszaka a Rabnótiban</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----4.rész------------------------------------------------------------------------------------------------------>
+
+<nav class="border-b border-gray-900 bg-gray-950">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <ul class="flex items-center">
+
+        <!--Rólunk-->
+        <li class="nav-item relative">
+          <button class="flex items-center gap-[5px] px-3 py-[14px] text-[20px] font-medium text-white hover:text-blue transition-colors whitespace-nowrap">
+          Rólunk <i class="fas fa-chevron-down text-[10px] mt-px"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 bg-black border border-gray-200 shadow-lg rounded-sm min-w-[180px]">
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Történet</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Bemutatkozás</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Munkatársak</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Oktatók</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Nyitvatartás, csengetési rend</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Elérhetőségek</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Galéria</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Karrier</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Radnóti Alumni</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Leendő kilencedikeseknek</a>
+          </div>
+        </li>
+
+        <!--Tanulóinknak-->
+        <li class="nav-item relative">
+          <button class="flex items-center gap-[5px] px-3 py-[14px] text-[20px] font-medium text-white hover:text-blue transition-colors whitespace-nowrap">
+          Tanulóinknak <i class="fas fa-chevron-down text-[10px] mt-px"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 bg-black border border-gray-200 shadow-lg rounded-sm min-w-[180px]">
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Hasznos tudnivalók</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Események, iskolai napok</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Tanév rendje</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Tantárgyi menetrendek</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Egyéb foglalkozások</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Órarend</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Adatkezelési tájékoztató- nyilatkozat tanulóknak</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Tanárok fogadóórája</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Szakmai vizsga - vizsgaközpont</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Érettségi témakörök</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Közösségi szolgálat</a>
+          </div>
+        </li>
+
+        <!--Hírek-->
+        <li class="nav-item">
+          <button class="block px-3 py-[14px] text-[20px] font-medium text-white hover:text-blue transition-colors whitespace-nowrap">
+          Hírek
+          </button>
+        </li>
+
+        <!--Képzéseink-->
+        <li class="nav-item relative">
+          <button class="flex items-center gap-[5px] px-3 py-[14px] text-[20px] font-medium text-white hover:text-blue transition-colors whitespace-nowrap">
+            Képzéseink <i class="fas fa-chevron-down text-[10px] mt-px"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 bg-black border border-gray-200 shadow-lg rounded-sm min-w-[180px]">
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Technikumi és szakképző iskolai oktatás</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Felnőttek nappali rendszerű szakmai oktatása</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Felnőttek szakmai oktatása</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Szakmai képzéseink</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Egyéb képzéseink</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Duális partnerek</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Díjak, kedvezmények</a>
+          </div>
+        </li>
+
+        <!--Szakmai dokumentumok-->
+        <li class="nav-item relative">
+          <button class="flex items-center gap-[5px] px-3 py-[14px] text-[20px] font-medium text-white hover:text-blue transition-colors whitespace-nowrap">
+          Szakmai dokumentumok <i class="fas fa-chevron-down text-[10px] mt-px"></i>
+          </button> 
+          <div class="dropdown-menu absolute top-full left-0 bg-black border border-gray-200 shadow-lg rounded-sm min-w-[180px]">
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Szakmai program</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Képzési program</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">KKK/PTT</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Külső értékelések, összegző jelentések</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Vezetési program</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">SZMSZ</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Házirend</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Tűzvédelmi szabályzat és menekülési útvonal</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Munkavédelmi szabályzat</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Eljárásrend a tanulók bántalmazási eseteinek kivizsgálására és kezelésére</a>
+          </div>
+        </li>
+
+        <!--Projektek-->
+        <li class="nav-item relative">
+          <button class="flex items-center gap-[5px] px-3 py-[14px] text-[20px] font-medium text-white hover:text-blue transition-colors whitespace-nowrap">
+          Projektek <i class="fas fa-chevron-down text-[10px] mt-px"></i>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 bg-black border border-gray-200 shadow-lg rounded-sm min-w-[180px]">
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Projektek</a>
+            <a href="#" class="block px-4 py-2 text-[15px] text-white hover:bg-blue-100 hover:text-black">Széchenyi 2020 projektek</a>
+          </div>
+        </li>
+
+        <!--Közérdekű adatok-->
+        <li class="nav-item">
+          <button class="block px-3 py-[14px] text-[20px] font-medium text-white hover:text-blue transition-colors whitespace-nowrap">
+          Közérdekű adatok
+          </button>
+        </li>
+
+        <ul class="flex items-center gap-2 ml-auto"></ul>
+
+          <!--Kréta-->
+          <li class="mr-2">
+            <a href="https://www.e-kreta.hu/" class="flex items-center gap-[7px] px-4 py-[7px] my-[7px] bg-blue-600 hover:bg-blue-700 text-white rounded text-[20px] font-semibold transition-colors whitespace-nowrap">
+            Kréta
+            </a>
+          </li>
+
+          <!--Teams-->
+          <li>
+            <a href="https://www.microsoft.com/hu-hu/microsoft-teams/log-in" class="flex items-center gap-[7px] px-4 py-[7px] my-[7px] bg-purple-600 hover:bg-purple-700 text-white rounded text-[20px] font-semibold transition-colors whitespace-nowrap">
+            Teams
+            </a>
+          </li>
+
+        </ul>
+      </ul> 
+  </div>
+</nav>
+
+<div class="w-full h-[1px] bg-white opacity-50"></div>
+
+</header>
+
+
+<!--Fő tartalom terület--------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<main class="max-w-screen-xl mx-auto px-6 py-12">
+  <div class="bg-black rounded-lg border border-gray-300 shadow-md p-8">
+    <h1 class="text-3xl font-bold text-white mb-4">Üdvözlünk a játékunban!</h1>
+    <h2 class="text-3xl font-bold text-white mb-4">Ez egy szabadulószóba, ami 2 személyes, te vagy a webes játékos te fogsz segíteni a csapattársadnak, aki kiszabadul az iskolából.</h2>
+    <h2 class="text-3xl font-bold text-white mb-4">Ha készen állsz támogatni a barátod és megvan a megfelelő kommunikációs eszközötök a kapcsolattartásra nyomj a start gombra.</h2>
+    <div class="flex justify-center">
+      <button class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors">Start</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer------------------------------------------------------------------------------------------------------------------>
+
+<footer class="bg-black border-t border-gray-300">
+
+<!--1.rész------------------------------------>
+
+  <div class="bg-gray-950 text-white">
+    <div class="max-w-screen-xl mx-auto px-6 py-2 flex items-center justify-center gap-3">
+      <h1 class="text-[25px] font-semibold">Baranya Vármegyei Rabnóti</h1>
+    </div>
+  </div>
+
+<div class="w-full h-[1px] bg-white opacity-50"></div>
+
+<!--2.rész------------------------------------>
+
+  <div class="bg-gray-975 pt-7 pb-5">
+    <div class="max-w-screen-xl mx-auto px-6 flex justify-center gap-6">
+      <div class="flex flex-col items-start">
+        <div class="w-[110px] h-[90px] border border-gray-200 shadow-sm overflow-hidden">
+          <img src="LOGO.jpg" alt="Éjszaka a Rabnótiban logo" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="flex flex-col justify-start">
+        <h2 class="text-[22px] font-bold text-white mb-2 leading-tight">
+          Baranya Vármegyei SzC
+          Radnóti Miklós  
+          Közgazdasági Technikum
+        </h2>
+        <p class="text-[18px] text-white">7633 Pécs, Esztergár L. utca 6.</p>
+      </div>
+    </div>
+  </div>
+
+<!--3.rész------------------------------------>
+
+  <div class="border-t border-gray-300 bg-gray-950">
+    <div class="max-w-screen-xl mx-auto px-6 py-3 flex items-center justify-between">
+      <p class="text-[20px] text-white">2026 • Baranya Vármegyei SzC Radnóti Miklós Közgazdasági Technikum</p>
+      <div class="flex gap-6">
+        <a href="#" class="text-[17px] text-white hover:text-blue-600">Adatkezelés</a>
+        <a href="#" class="text-[17px] text-white hover:text-blue-600">Impresszum</a>
+      </div>
+    </div>
+  </div>
+
+<div class="w-full h-[1px] bg-white opacity-50"></div>
+</footer>
+</body>
+</html>
